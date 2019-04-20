@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Questions</title>
+
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="jumbotron">
+      <h1 class="text-center">
+        <span class="fa fa-users"></span> Survey Questions</h1>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <!-- Reservation Page -->
+        <div class="card">
+          <div class="card-header">
+            Survey Questions
+          </div>
+          <div class="card-body">
+            <form role="form">
+              <div class="form-group" required>
+                <label for="profileName">Name</label>
+                <input type="text" class="form-control" id="profileName">
+              </div>
+              <div class="form-group" required>
+                <label for="profilePhoto">Photo</label>
+                <input type="text" class="form-control" id="profilePhoto">
+              </div>
+
+              <div class="form-group">
+                <label for="profileQuest1">Question 1 - Do you like pets?</label>
+                <select class="form-control" id="profileQuest1" required>
+                  <option>1 (not at all)</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5 (extremely)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="profileQuest2">Question 2 - Do you enjoy reading?</label>
+                <select class="form-control" id="profileQuest2" required>
+                  <option>1 (not at all)</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5 (all the time)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="profileQuest3">Question 3 - What is you opion of Trump?</label>
+                <select class="form-control" id="profileQuest3" required>
+                  <option>1 (he's the best)</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5 (he's the worst)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="profileQuest4">Question 4 - Do you prefer to eat at home?</label>
+                <select class="form-control" id="profileQuest4" required>
+                  <option>1 (I prefer to dine out)</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5 (Always at home)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="profileQuest5">Question 5 - Will you be taking a computer course?</label>
+                <select class="form-control" id="profileQuest5" required>
+                  <option>1 (no way)</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5 (definitely)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="profileQuest6">Question 6 - Do you prefer hiking to a movie</label>
+                <select class="form-control" id="profileQuest6" required>
+                  <option>1 (definitely a movie)</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5 (definitely a hike)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="profileQuest7">Question 7 - Would you write this program outside of class?</label>
+                <select class="form-control" id="profileQuest7" required>
+                  <option>1 (never)</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5 (absolutely)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="profileQuest8">Question 8 - Would you pick a chain restaruant over a unique restaurant?</label>
+                <select class="form-control" id="profileQuest8" required>
+                  <option>1 (chain restaurant for me)</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5 (something unique please)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="profileQuest9">Question 9 - How likely are you to vote in the next election?</label>
+                <select class="form-control" id="profileQuest9" required>
+                  <option>1 (will not)</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5 (absolutely)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="profileQuest10">Question 10 - Do you favor a flat tax?</label>
+                <select class="form-control" id="profileQuest10" required>
+                  <option>1 (I like the current system)</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5 (absolutely)</option>
+                </select>
+              </div>
+
+              <button type="submit" class="btn btn-primary submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <footer class="footer">
+      <div class="container">
+        <p>
+          <a href="/api/friends">API Friends Link</a> | <a href="https://github.com/jstaugaard3/FriendFinder">GIT Hub</a>
+      </div>
+    </footer>
+
+  </div>
+
+<!------------------------------------------------------------------->
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">You are most compatible with:</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body" id="txtBody">
+  
+      </div>
+
+      <!-- Modal footer -->
+       <div class="modal-footer">
+        <button id="mod-close" type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div> 
+
+    </div>
+  </div>
+</div>
+
+
+  
+</body>
+
+</html>
+
+
+
+<script type="text/javascript">
+
+$(".submit").on("click", function (event) {
+    event.preventDefault();
+
+    var newProfile = {
+      name: $("#profileName").val().trim(),
+      photos: $("#profilePhoto").val().trim(),
+       scores: [Number.parseInt($("#profileQuest1").val().trim()),
+      Number.parseInt($("#profileQuest2").val().trim()),
+      Number.parseInt($("#profileQuest3").val().trim()),
+      Number.parseInt($("#profileQuest4").val().trim()),
+      Number.parseInt($("#profileQuest5").val().trim()),
+      Number.parseInt($("#profileQuest6").val().trim()),
+      Number.parseInt($("#profileQuest7").val().trim()),
+      Number.parseInt($("#profileQuest8").val().trim()),
+      Number.parseInt($("#profileQuest9").val().trim()),
+      Number.parseInt($("#profileQuest10").val().trim())
+      ]
+    };
+
+    $.post("/api/friends", newProfile,
+      function (data) {
+        
+        if (data) {
+              var compatToDisplay = "<div class='card' style='width: 100%;'>"+
+                    "<div class='card-body'>"+
+                    "<h5 class='card-title'>"+data.name+"</h5>"+
+                    "</div>" +
+                    "<img class='card-img-bottom' src="+data.photo+" alt='Photo of person'>"+
+                    "</div>"
+
+          console.log(data);
+          $("#txtBody").html(compatToDisplay);
+             $('#myModal').modal('toggle');
+
+        }
+        else {
+          console.log("DID NOT COME BACK TRUE " + data);
+        }
+
+        // Clear the form when submitting
+  
+        $("#profileName").val("");
+        $("#profilePhoto").val("");
+        $("#profileQuest1").val("3");
+        $("#profileQuest2").val("3");
+        $("#profileQuest3").val("3");
+        $("#profileQuest4").val("3");
+        $("#profileQuest5").val("3");
+        $("#profileQuest6").val("3");
+        $("#profileQuest7").val("3");
+        $("#profileQuest8").val("3");
+        $("#profileQuest9").val("3");
+        $("#profileQuest10").val("3");
+
+      });
+
+  });
+
+</script>
